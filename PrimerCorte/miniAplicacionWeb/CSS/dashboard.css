@@ -1,0 +1,102 @@
+/* Estilos para el dashboard */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo */
+body{
+    background: linear-gradient(135deg,#b59b7d,#be9282);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Contenedor principal */
+.container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    width:420px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Titulos */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#444;
+}
+
+h3{
+    margin-top:15px;
+    margin-bottom:8px;
+    color:#be9282;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+/* Focus */
+input:focus{
+    border-color:#be9282;
+    box-shadow:0 0 5px rgba(190,146,130,0.4);
+}
+
+/* Botón */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#be9282;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b59b7d;
+}
+
+/* estilos para otros dispositivos */
+
+@media (max-width:768px){
+
+    .container{
+        width:80%;
+        padding:30px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .container{
+        width:95%;
+        padding:25px;
+    }
+
+    input{
+        font-size:0.9rem;
+        padding:9px;
+    }
+
+    button{
+        font-size:0.9rem;
+        padding:10px;
+    }
+
+}

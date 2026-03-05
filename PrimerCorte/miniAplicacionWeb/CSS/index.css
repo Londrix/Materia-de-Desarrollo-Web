@@ -1,0 +1,119 @@
+/* Estilos para la página de inicio */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo de la página */
+body{
+    background: linear-gradient(135deg,#b59b7d,#be9282);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    color:#333;
+}
+
+/* Título principal */
+h1{
+    color:white;
+    margin-bottom:20px;
+    font-size:2.2rem;
+}
+
+/* Texto */
+p{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    max-width:500px;
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+/* Subtitulo */
+h4{
+    margin-top:10px;
+    color:#444;
+}
+
+/* Imagen */
+img{
+    width:250px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Botón */
+a{
+    text-decoration:none;
+    background:#761818;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#7d0404;
+}
+
+/*estilos para otros dispositivos */
+
+@media (max-width: 768px){
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    p{
+        max-width:90%;
+        font-size:0.95rem;
+    }
+
+    img{
+        width:200px;
+    }
+
+    a{
+        padding:10px 20px;
+        font-size:0.9rem;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    p{
+        font-size:0.9rem;
+        padding:15px;
+    }
+
+    img{
+        width:160px;
+    }
+
+    a{
+        display:block;
+        width:80%;
+        margin:auto;
+        padding:12px;
+        font-size:0.9rem;
+    }
+
+}

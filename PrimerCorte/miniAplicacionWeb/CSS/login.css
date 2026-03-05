@@ -1,0 +1,114 @@
+/* Estilos para la página de login */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilos del fondo */
+body{
+    background: linear-gradient(135deg,#b59b7d,#be9282);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* diseño del contenedor del formulario */
+form{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    width:350px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Título */
+h2{
+    position:absolute;
+    top:90px;
+    color:white;
+}
+
+/* Inputs */
+input{
+    margin-top:10px;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+/* Efectos */
+input:focus{
+    border-color:#be9282;
+    box-shadow:0 0 5px rgba(190,146,130,0.4);
+}
+
+/* Botón */
+button{
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#be9282;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b59b7d;
+}
+
+/* diseño para el link */
+a{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#333;
+}
+
+a:hover{
+    color:#be9282;
+}
+
+/* diseños para otros dispositivos */
+
+@media (max-width:768px){
+
+    form{
+        width:80%;
+        padding:30px;
+    }
+
+    h2{
+        font-size:1.6rem;
+    }
+
+}
+
+@media (max-width:480px){
+
+    form{
+        width:95%;
+        padding:25px;
+    }
+
+    input{
+        padding:9px;
+        font-size:0.9rem;
+    }
+
+    button{
+        padding:10px;
+        font-size:0.9rem;
+    }
+
+}

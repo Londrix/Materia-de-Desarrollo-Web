@@ -1,0 +1,93 @@
+/* Estilos para la página de citas */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pertenece al fondo */
+body{
+    background: linear-gradient(135deg,#b59b7d,#be9282);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+/* estilos del contenedor */
+.container{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    max-width:450px;
+}
+
+/* Título */
+h1{
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* Imagen de la vista */
+img{
+    width:220px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Botón */
+a{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 25px;
+    background:#be9282;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#b59b7d;
+}
+
+@media (max-width:768px){
+
+    .container{
+        max-width:80%;
+        padding:30px;
+    }
+
+    img{
+        width:180px;
+    }
+
+}
+/* Estilos para dispositivos móviles */
+@media (max-width:480px){
+
+    .container{
+        max-width:95%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:1.3rem;
+    }
+
+    img{
+        width:150px;
+    }
+
+    a{
+        width:80%;
+        padding:10px;
+    }
+
+}
