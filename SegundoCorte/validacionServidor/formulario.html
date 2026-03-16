@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registro de evento</title>
+</head>
+<body>
+    <h2>Registro de evento</h2>
+
+    <!--El formulario de registro de evento donde se recopilan los datos del usuario-->
+    <!--se coloca un onsubmit para llamar a la función de validación-->
+    <form method="post" action="./procesar_formulario.php" onsubmit="return validarFormulario();" novalidate>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="tel">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+        <br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+<!--Este script valida el formulario-->
+<script src="validacion.js" defer></script>
+
+</body>
+</html>
